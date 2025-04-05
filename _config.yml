@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Rob Williams"
+title                    : "Ahmad Naufal Labiib Nabhaan"
 title_separator          : "-"
-name                     : &name "Rob Williams"
-description              : &description "Postdoc in Political Science"
-url                      : https://jayrobwilliams.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Ahmad Naufal Labiib Nabhaan"
+description              : &description "Fresh Graduate of Bachelor of Computer Engineering (IoT/AI)"
+url                      : https://administrator2992.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "jayrobwilliams/jayrobwilliams.github.io"
+repository               : "administrator2992/administrator2992.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 mastodon:
-  username               : "fosstodon.org/@jayrobw"
+  username               : 
 twitter:
   username               : 
 facebook:
@@ -79,21 +79,21 @@ analytics:
   google:
     tracking_id          : 
   goatcounter:
-    code		 : jayrobwilliams
+    code		 : administrator2992
 
 
 # Site Author
 author:
-  name             : "Rob Williams"
+  name             : "Ahmad Naufal Labiib Nabhaan"
   avatar           : "profile.png"
-  bio              : "Data Scientist"
+  bio              : "Edge AI/IoT Researcher"
   location         :
   employer         :
   pubmed           :
-  orcid            : "http://orcid.org/0000-0001-9259-3883"
-  googlescholar    : "https://scholar.google.com/citations?user=fiaPSmgAAAAJ"
-  email            : "rob.williams@wustl.edu"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  orcid            : 
+  googlescholar    : 
+  email            : "nabhaan.ahmad.ln@gmail.com"
+  researchgate     : "https://www.researchgate.net/profile/Ahmad-Nabhaan"
   uri              :
   bitbucket        :
   codepen          :
@@ -101,18 +101,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "jayrobwilliams"
-  gitlab           : "jayrobwilliams"
+  github           : "administrator2992"
+  gitlab           : "administrator2992"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  mastodon         : "fosstodon.org/@jayrobw"
+  linkedin         : "ahmadnabhaan"
+  mastodon         : 
   pinterest        :
   soundcloud       :
-  stackoverflow    : #"https://stackoverflow.com/users/10912314/jayrobwilliams"
+  stackoverflow    : 
   steam            :
   tumblr           :
   twitter          : 
