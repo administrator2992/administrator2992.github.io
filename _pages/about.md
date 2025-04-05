@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-- 👋 Hi, I’m @administrator2992
+- 👋 Hi, I’m Ahmad Naufal Labiib Nabhaan
 - 👀 I’m interested in AI Systems and Edge AI (Hardware/Software Optimization of AI Runtime on Edge Devices)
 - 🌱 I’m currently learning to optimize hardware performance
 - 💞️ I’m looking to collaborate on AI Systems
