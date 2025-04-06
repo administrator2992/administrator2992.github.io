@@ -8,6 +8,7 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Ahmad Naufal Labiib Nabhaan"
+logo                     : "logo.png"
 title_separator          : "-"
 name                     : &name "Ahmad Naufal Labiib Nabhaan"
 description              : &description "Fresh Graduate of Bachelor of Computer Engineering (IoT/AI)"
