@@ -7,7 +7,7 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">
-            <img src="{{ site.logo | prepend: "/images/" | prepend: base_path }}" alt="{{ site.title }}">
+            <img src="{{ site.logo | prepend: "/images/" | prepend: base_path }}" alt="{{ site.title }}" style="width:50px;height:50px;">
           </a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
