@@ -34,7 +34,7 @@ Source Code : https://github.com/amikom-gace-research-group/PTQ_HWperformance_Co
 
 ---
 
-## Dummy ADC Generator for ESP Microcontroller and the API System
+## Dummy ADC Generator for ESP Microcontroller with REST API
 
 Languages : Python, HTML
 
