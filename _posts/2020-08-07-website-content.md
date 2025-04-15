@@ -64,10 +64,7 @@ main:
     url: /publications/
 
   - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
+    url: /talks/
     
   - title: "Portfolio"
     url: /portfolio/
@@ -93,7 +90,7 @@ main:
   - title: "Research"
     url: /research/
 
-  - title: "Teaching"
+  - title: "Portofolio"
     url: /teaching/
 
   - title: "Software"

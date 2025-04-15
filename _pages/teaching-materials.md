@@ -1,6 +1,6 @@
 ---
 permalink: /teaching-materials/
-title: "Teaching Materials"
+title: "Portofolio Materials"
 header: 
   og_image: "teaching/pdp.png"
 ---
