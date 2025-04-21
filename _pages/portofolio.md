@@ -3,6 +3,15 @@ permalink: /portofolio/
 title: "Portofolio"
 ---
 
+## Car Showroom Administration Website (CRUD)
+
+Published Web : https://ec2-3-27-69-85.ap-southeast-2.compute.amazonaws.com
+
+Languanges : Python (Django), HTML, CSS, Javascript
+
+Source code : https://github.com/administrator2992/showroom_project
+
+---
 
 ## Web Administrasi Sekolah (School Administration Website)
 
