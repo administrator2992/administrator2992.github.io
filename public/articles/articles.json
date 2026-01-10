@@ -1,0 +1,23 @@
+{
+    "_guide": "HOW TO ADD NEW ARTICLES: Copy an article object below, update the fields, and add your new .md file to /public/articles/",
+    "_fields": {
+        "slug": "URL-friendly ID (used in /article/slug)",
+        "image": "Cover image path (e.g., /assets/my-image.png)",
+        "title": "Article title",
+        "description": "Short description for article card",
+        "date": "Publication date (e.g., 11 August 2025)",
+        "author": "Author name",
+        "file": "Path to markdown file (e.g., /articles/my-article.md)"
+    },
+    "articles": [
+        {
+            "slug": "ascanai",
+            "image": "/assets/ascanai_architecture.png",
+            "title": "AScanAI - Spatiotemporal Rule-Based Expert System for Continuous Learning of Object Detection in Retail",
+            "description": "A hybrid AI system combining Deep Learning (YOLOv11) with Rule-Based Expert System to handle the challenge of identifying products with high visual similarity.",
+            "date": "11 August 2025",
+            "author": "Ahmad Nabhaan",
+            "file": "/articles/article-1.md"
+        }
+    ]
+}

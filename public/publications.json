@@ -1,0 +1,37 @@
+{
+    "_guide": "HOW TO ADD NEW PUBLICATIONS: Copy a publication object below and update the fields",
+    "_fields": {
+        "title": "Publication title",
+        "authors": "Author names in citation format",
+        "journal": "Journal/Conference name",
+        "year": "Publication year",
+        "description": "Brief description of the publication",
+        "link": "URL to the publication (PDF or article page)"
+    },
+    "publications": [
+        {
+            "title": "Deep Learning Model Compression Techniques Performance on Edge Devices",
+            "authors": "Rachmanto, R., Nabhaan, A., & Setyanto, A.",
+            "journal": "MATRIK : Jurnal Manajemen, Teknik Informatika Dan Rekayasa Komputer",
+            "year": "2024",
+            "description": "This paper evaluated model compression methods based on accuracy, latency, model size, and time to compress overhead. The research concluded that knowledge distillation is the most effective method, offering up to 11.4x model size reduction and a 78.67% latency speedup, with only a moderate loss in accuracy and compression time.",
+            "link": "https://journal.universitasbumigora.ac.id/index.php/matrik/article/view/3961/1685"
+        },
+        {
+            "title": "Characterizing Hardware Utilization on Edge Devices when Inferring Compressed Deep Learning Models",
+            "authors": "Nabhaan, A., Rachmanto, R., & Setyanto, A.",
+            "journal": "MATRIK : Jurnal Manajemen, Teknik Informatika Dan Rekayasa Komputer",
+            "year": "2024",
+            "description": "This paper explores the performance and resource utilization of compressed deep learning models on edge devices.",
+            "link": "https://journal.universitasbumigora.ac.id/index.php/matrik/article/view/3938/1822"
+        },
+        {
+            "title": "Characterizing Deep Learning Model Compression with Post-Training Quantization on Accelerated Edge Devices",
+            "authors": "R. D. Rachmanto, Z. Sukma, A. N. L. Nabhaan, A. Setyanto, T. Jiang and I. K. Kim",
+            "journal": "2024 IEEE International Conference on Edge Computing and Communications (EDGE)",
+            "year": "2024",
+            "description": "This work is the first comprehensive characterization study of online model compression on resource-constrained edge devices. The team evaluated various deep learning models with different sizes and resource requirements, focusing on post-training quantization (PTQ) using recent NVIDIA edge devices.",
+            "link": "https://cobweb.cs.uga.edu/~kim/papers/2024-edge-ml-compression.pdf"
+        }
+    ]
+}
