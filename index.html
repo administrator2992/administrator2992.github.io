@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <title>Naufal</title>
+  <script>
+    // GitHub Pages SPA: restore the path saved by 404.html before React Router mounts.
+    (function () {
+      var redirect = sessionStorage.getItem('spa-redirect');
+      if (redirect) {
+        sessionStorage.removeItem('spa-redirect');
+        window.history.replaceState(null, '', redirect);
+      }
+    })();
+  </script>
 </head>
 
 <body>
