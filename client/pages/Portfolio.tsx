@@ -11,11 +11,11 @@ import {
   Download,
   FileText,
 } from "lucide-react";
-import pdfWorkerUrl from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 
-// Configure PDF.js worker — use Vite ?url import so the worker is
-// correctly copied & hashed into dist/spa/assets/ for production.
-pdfjs.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
+// Use unpkg CDN for the worker, keyed to the exact installed pdfjs-dist version.
+// This avoids Rollup/Vite ?url resolution issues with node_modules exports maps.
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+
 
 type SlideDir = "left" | "right" | null;
 
