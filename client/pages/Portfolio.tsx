@@ -11,12 +11,11 @@ import {
   Download,
   FileText,
 } from "lucide-react";
+import pdfWorkerUrl from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 
-// Configure PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();
+// Configure PDF.js worker — use Vite ?url import so the worker is
+// correctly copied & hashed into dist/spa/assets/ for production.
+pdfjs.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
 
 type SlideDir = "left" | "right" | null;
 
