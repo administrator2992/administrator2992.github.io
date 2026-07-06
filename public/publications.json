@@ -32,6 +32,14 @@
             "year": "2024",
             "description": "This work is the first comprehensive characterization study of online model compression on resource-constrained edge devices. The team evaluated various deep learning models with different sizes and resource requirements, focusing on post-training quantization (PTQ) using recent NVIDIA edge devices.",
             "link": "https://cobweb.cs.uga.edu/~kim/papers/2024-edge-ml-compression.pdf"
+        },
+        {
+            "title": "Covariance-Guided Resource Adaptive Learning for Efficient Edge Inference",
+            "authors": "Nabhaan, A. N. L., Sukma, Z., & Rachmanto, R. D.",
+            "journal": "arXiv preprint",
+            "year": "2026",
+            "description": "This paper introduces a covariance-guided approach to resource-adaptive learning, enabling efficient deep learning inference on edge devices by dynamically adjusting model behavior based on available hardware resources.",
+            "link": "https://arxiv.org/abs/2603.14577"
         }
     ]
 }
