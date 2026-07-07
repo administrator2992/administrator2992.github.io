@@ -19,7 +19,33 @@ pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.vers
 
 type SlideDir = "left" | "right" | null;
 
+interface PortfolioOption {
+  id: string;
+  name: string;
+  badge: string;
+  file: string;
+  downloadName: string;
+}
+
+const PORTFOLIOS: PortfolioOption[] = [
+  {
+    id: "ai",
+    name: "AI Engineer",
+    badge: "AI Engineer Portfolio",
+    file: "/portfolio.pdf",
+    downloadName: "Portfolio - AI Engineer.pdf",
+  },
+  {
+    id: "iot",
+    name: "IoT Engineer",
+    badge: "IoT Engineer Portfolio",
+    file: "/portfolio-iot.pdf",
+    downloadName: "Portfolio - IoT Engineer.pdf",
+  },
+];
+
 export default function Portfolio() {
+  const [activeId, setActiveId] = useState("ai");
   const [numPages, setNumPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1); // 1-indexed
   const [pendingPage, setPendingPage] = useState<number | null>(null);
@@ -29,6 +55,17 @@ export default function Portfolio() {
   const [pdfLoaded, setPdfLoaded] = useState(false);
   const [pageWidth, setPageWidth] = useState(800);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const activePortfolio = PORTFOLIOS.find(p => p.id === activeId) || PORTFOLIOS[0];
+
+  const handlePortfolioChange = (id: string) => {
+    if (id === activeId) return;
+    setActiveId(id);
+    setCurrentPage(1);
+    setPendingPage(null);
+    setPdfLoaded(false);
+    setNumPages(0);
+  };
 
   // Touch support
   const touchStartX = useRef<number | null>(null);
@@ -157,10 +194,10 @@ export default function Portfolio() {
 
       <section className="min-h-screen bg-gradient-to-b from-[#f9fdf3] to-white px-4 py-12 lg:px-8 lg:py-20">
         {/* Header */}
-        <div className="mx-auto mb-10 max-w-5xl text-center">
+        <div className="mx-auto mb-8 max-w-5xl text-center">
           <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-[#D4E5B4]/60 px-4 py-1.5 text-sm font-medium text-[#5a8a2a]">
             <FileText className="h-4 w-4" />
-            AI Engineer Portfolio
+            {activePortfolio.badge}
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 lg:text-5xl">
             Portfolio
@@ -168,6 +205,23 @@ export default function Portfolio() {
           <p className="mt-3 text-base text-gray-500 lg:text-lg">
             Swipe or use arrows to browse through my work
           </p>
+        </div>
+
+        {/* Portfolio Role Selector */}
+        <div className="mx-auto mb-8 flex max-w-xs items-center justify-center p-1 bg-gray-200/50 rounded-xl ring-1 ring-black/5">
+          {PORTFOLIOS.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => handlePortfolioChange(item.id)}
+              className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-semibold tracking-wide transition-all duration-200 ${
+                activeId === item.id
+                  ? "bg-[#a8d070] text-white shadow-sm"
+                  : "text-gray-600 hover:text-gray-900 hover:bg-gray-300/30"
+              }`}
+            >
+              {item.name}
+            </button>
+          ))}
         </div>
 
         <div ref={containerRef} className="mx-auto max-w-5xl">
@@ -216,8 +270,8 @@ export default function Portfolio() {
               <div className="mx-2 h-4 w-px bg-gray-200" />
               <a
                 id="download-pdf-btn"
-                href="/portfolio.pdf"
-                download="Portfolio - AI Engineer.pdf"
+                href={activePortfolio.file}
+                download={activePortfolio.downloadName}
                 className="flex items-center gap-1.5 rounded-lg bg-[#a8d070] px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-[#8fc055] active:scale-95"
               >
                 <Download className="h-3.5 w-3.5" />
@@ -248,7 +302,7 @@ export default function Portfolio() {
             >
               {/* Invisible Document for loading pages */}
               <Document
-                file="/portfolio.pdf"
+                file={activePortfolio.file}
                 onLoadSuccess={onDocumentLoadSuccess}
                 loading={null}
                 error={null}
